@@ -14,7 +14,7 @@ const App = () => {
     setQuery(event.target.value)
   }
 
-  const filteredItems = products.filter((product) => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1))
+  const filteredItems = products.filter((product) => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== -1)
 
   const handleChange = event => {
     setSelectedCategory(event.target.value)
